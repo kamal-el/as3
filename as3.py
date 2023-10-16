@@ -354,7 +354,7 @@ class as3:
       self._debug ("Release version:" + release['name'] + ', ID:' + str(release['id']))
       # Output the release notes below
       body = release['body'].encode('utf-8','replace')
-      open ('release-notes-' + release['name'] + '.txt','w').write(body)
+      open ('release-notes-' + release['name'] + '.txt','wb').write(body)
 
       # Loop through the assets for this release
       for file in release['assets']:
